@@ -1,0 +1,125 @@
+#webnav{
+  padding-top: -45px;
+    height:70px;
+    background: rgba(36, 43, 105, 1);
+    z-index: 10;
+}
+.logo{
+    height:120px;
+}
+#webnav ul, li{
+    list-style: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 10px;
+    display: flex;
+}
+.button{
+  margin-top: -10px;
+  border-radius: 5%;
+  font-size: 18px;
+  background-color: #b32b31;
+  height: 35px;
+  border: none;
+  color:white;
+  width:100px;
+  text-decoration: none;
+}
+button:hover{
+  text-decoration: underline;
+}
+button a{
+  text-decoration: none;
+}
+button a:hover{
+  text-decoration: underline;
+}
+li {
+    display: block;
+    transition-duration: 0.5s;
+   }
+    
+   ul li ul {
+     visibility: hidden;
+     opacity: 0;
+     position: absolute;
+     transition: all 1.5s ease;
+     margin-top: 1rem;
+     left: 0;
+     display: none;
+   }
+   
+   ul li:hover > ul,
+   ul li ul:hover {
+     visibility: visible;
+     opacity: 1;
+     display: block;
+     transition:2.5s;
+   }
+   
+   ul li ul li {
+    transition: 1.5s;
+     clear: both;
+     width: 100%;
+   }
+.drop1{
+  background-color: white;
+  height:320px;
+  border-radius: 4px;
+}
+.drop1 a{
+  color: black;
+}
+.item{
+  font-family: serif;
+  font-size: 15px;
+  margin-bottom: 15px;
+  color:black;
+}
+.item:hover{
+  color:brown;
+}
+.log{
+  padding-top: -15px !important;
+  padding-left: 30px;
+  height: 100px;
+  width: 30%;background: rgb(36,43,105);
+  background: -moz-linear-gradient(125deg, rgba(36,43,105,1) 83%,transparent 84%);
+  background: -webkit-linear-gradient(120deg, rgba(36,43,105,1) 83%,transparent 84%);
+  background: linear-gradient(120deg, rgba(36,43,105,1) 83%, transparent 84%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#242b69",endColorstr="#694121",GradientType=1);
+}
+@media screen and (min-width:320px) and (max-width:480px) {
+  #webnav{
+      display: none;
+  }
+  .buttons{
+      top:20% !important;
+      height:30px !important;
+  }
+  .welcomepic{
+      width: 100%;
+  }
+  .discover{
+      height:2000px;
+  }
+  #mobilenav{
+      display: block !important;
+  }
+}
+@media screen and (min-width:1320px) and (max-width:1360px) {
+#webnav{
+      display: block;
+  }
+  #mobilenav{
+      display: none !important;
+  }
+}
+
+/* mobile */
+
+#mobilenav{
+  background-color: rgba(36, 43, 105, 1);
+  height:70px;
+}

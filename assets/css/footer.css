@@ -1,0 +1,96 @@
+footer{
+    background-color:#242b69;
+    height:530px;
+    color:white;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+.update-input{
+  width:60%;
+    height:50px;
+}
+.footline{
+    width:1px;
+    height:350px;
+    background-color: white;
+}
+.a{
+    text-decoration: none;
+}
+.a:hover{
+    text-decoration: underline;
+}
+.joinline{
+  height:2px;
+  background-color: white;
+}
+.inquire{
+  color:white;
+  height: 60px;
+  border-radius: 5px;
+  background: transparent;
+  border: #f1f1f1 3px solid;
+}
+.sidelinks-a{
+  color: black;
+  text-decoration: none;
+}
+.sidelinks-a:hover{
+  color:brown;
+  text-decoration: none;
+}
+.inquire:hover{
+  transition: 0.4s;
+  font-weight: 700;
+  color:white;
+  background-color: darkred;
+}
+.Contact-boxes{
+  right:0;
+  top:30%;
+  position: fixed;
+  z-index: 6;
+  float: right !important;
+  /* height:200px; */
+  display: block;
+}
+.C-boxes{
+  border-radius: 2%;
+  font-size: small;
+  margin-bottom: 2px;
+  border:transparent;
+  width:56px;
+  display:block;
+  height:80px;
+  background-color: rgb(114, 0, 0);
+  color:white;
+}
+.foooter-line{
+  margin-top: 30px;
+  height:1px;
+  background-color: white;
+}
+.line-footer{
+  background-color: white;
+  width:1px;
+}
+.footer-about{
+  margin-left: 20px;
+  border-left: solid 1px white;
+}
+.useful{
+  font-size: 15px;
+  padding-left: 20px;
+    border-left: solid 1px white !important;
+  }
+  .useful-one{
+    font-size: larger;
+  }
+@media screen and (max-width: 620px) {
+  footer{
+    height: 1000px !important;
+  }
+  #submit{
+    width:40%;
+  }
+}

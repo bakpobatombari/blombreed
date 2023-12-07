@@ -1,0 +1,116 @@
+.writeup{
+    padding-top: 40px;
+    height:600px;
+    background-color:rgb(252, 252, 252);
+  }
+  .sidelinks{
+    padding-top: 20px;
+    padding-left: 40px;
+    margin-left: 40px;
+    width: 100%;
+    height:430px;
+    background-color: rgb(235, 235, 235);
+  }
+  .divider{
+    background-color:rgb(179, 179, 179);
+    height:2px;
+    margin-bottom: 20px;
+  }
+  .sidelinks a{
+    text-decoration: none;
+    color:black
+  }
+  .links:hover{
+  color:brown;
+  }
+  .links{
+    font-size:12px;
+  }
+  .about{
+    margin-top:-430px;
+    margin-left: 300px;
+  }
+  .about-line{
+    background-color: gold;
+    height: 2px;
+  }
+  .learn-c{
+    color:rgba(139, 255, 216, 0.897);
+  }
+  .learn-c:hover{
+    color: rgba(139, 255, 216, 0.897);
+  }
+  .mission{
+    color:black;
+  }
+  .mission:hover{
+    color:black;
+  }
+  .join{
+    padding-top: 40px;
+    height:500px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  .footer-line{
+    margin-bottom: 20px;
+    height:2px;
+    background-color: white;
+  }
+  .inquireB{ 
+    transition:0.5s;
+    color:white;
+    border-radius: 5px;
+    height:60px;
+    background: transparent;
+    border: solid white 4px;
+  }
+  .staff{
+    margin-top: -250px;
+    margin-left: 300px;
+    height:300px;
+  }
+  .inquireB:hover{
+    border:none;
+   background: darkred;
+   font-weight: 700;
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+     @media only screen and (min-width:320px) and (max-width:480px){
+      #webnav {
+        display:none;
+      }
+  .landingpage{
+    margin-top: 50px;
+  }
+      #mobilenav{
+        top:0;
+        display: block;
+    }
+    .sidelinks{
+        display: none;
+    }
+    .about{
+        margin:0;
+    }
+    .about-line{
+        display:none;
+    }
+    .About-r{
+        display: none;
+    }
+    .Contact-boxes{
+        display:none;
+    }
+}
+    @media screen and (min-width:1030px) and (max-width:1366px){
+     #mobilenav{
+      display: none;
+     }
+     .about-line{
+        margin-bottom: 50px;
+     }
+  }
