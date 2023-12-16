@@ -11,7 +11,7 @@
 </head>
 <body>
 <div w3-include-html="navbar.html"></div>
-
+<div style="height:70px"></div>
 <!-- Slideshow container -->
 <div class="slideshow-container">
 
@@ -183,21 +183,39 @@
     <div class="slideshow-container">
 
       <!-- Full-width images with number and caption text -->
-      <div class="mySlides">
-        <div class="numbertext">1 / 3</div>
-        <img src="assets/images/landing1.png" style="width:100%">
+      <div class="slide">
+        <div class="row">
+          <div class="col-md-6">
+        <img src="assets/images/event1.png" class="col-md-6" style="width:100%">
+          </div>
+          <div class="col-md-6 event-writeup" style="color: white; font-family: serif;">
+            <p>2 February 2023</p>
+            <h3>GOOGLE NAMES BLOOMBREED SCHOOLS A GOOGLE REFERENCE SCHOOL IN NIGERIA</h3>
+            <p>Port Harcourt, Rivers State, Nigeria (19 July, 2021) - Google has awarded Bloombreed Schools the prestigious status of a Google Reference School…</p>
+            <h5><a href="#" class="r-link" style="color: white; text-decoration: none; font-size: 16px;">READ MORE <i></i></a></h5>
+          </div>
+        </div>
       </div>
     
-      <div class="mySlides">
-        <div class="numbertext">2 / 3</div>
-        <img src="assets/images/landing2.png" style="width:100%">
+      <div class="slide">
+        <div class="row">
+          <div class="col-md-6">
+        <img src="assets/images/event3.png" style="width:100%">
+          </div>
+          <div class="col-md-6 event-writeup" style="color: white;font-family: serif;">  
+            <p>2 February 2023</p>
+            <h3>GOOGLE NAMES BLOOMBREED SCHOOLS A GOOGLE REFERENCE SCHOOL IN NIGERIA</h3>
+            <p style="margin-bottom: 120px;">We are proud to announce that as of June 2021, Bloombreed Schools has been officially recognised by Google as the first Nigerian Google Referenc…</p>
+            <h5><a href="#" class="r-link" style="color: white; text-decoration: none; font-size: 16px;">READ MORE <i></i></a></h5>
+          </div>
+      </div>
       </div>
     <br>
     
     <!-- The dots/circles -->
-    <div style="margin-left:20px">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
+    <div style="text-align: center;">
+      <span class="dots" onclick="activeSlide(1)"></span>
+      <span class="dots" onclick="activeSlide(2)"></span>
     </div>
 </div>  
 </div>

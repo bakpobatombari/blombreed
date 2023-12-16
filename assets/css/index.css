@@ -3,13 +3,19 @@
   max-width: 1000px;
   position: relative;
   margin: auto;
+  overflow-x: hidden;
 }
 
 /* Hide the images by default */
-.mySlides {
+.mySlides,.slide {
+  display: none;
+}
+.mySlides:first-child, .slide:first-child{
   display: block;
 }
-
+.slide:first-child{
+  display: block !important;
+}
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -56,7 +62,15 @@
   position: absolute;
   top: 0;
 }
-
+.dots{
+  cursor: pointer;
+  height:10px;
+  width:30px;
+  position: relative;
+  background-color: white;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
@@ -72,7 +86,7 @@
   user-select: none;
 }
 
-.active, .dot:hover {
+.active, .dot:hover, .dots:hover {
   background-color: goldenrod;
 }
 
@@ -243,4 +257,9 @@ em{
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+.event-writeup{
+  background-color: #242B69;
+  height: 330px;
+  display: block;
 }

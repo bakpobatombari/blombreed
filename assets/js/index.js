@@ -58,20 +58,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-function showMySlides(n) {
-  let i;
-  const slides = document.getElementsByClassName("slide");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slides[slideIndex-1].style.display = "block";
-}function prevSlide() {
-  plusSlide(-1);
-}function nextSlide() {
-  plusSlide(1);
-}
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
 }
@@ -79,4 +65,32 @@ function openNav() {
 /* Set the width of the side navigation to 0 */
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
+}
+let indexSlide = 1;
+  showSlideSlide(indexSlide);
+
+// Next/previous controls
+function addSlides(n) {
+  showSlide(indexSlide += n);
+}
+
+// Thumbnail image controls
+function activeSlide(n) {
+  showSlide(indexSlide = n);
+}
+
+function showSlide(n) {
+  let i;
+  let slide = document.getElementsByClassName("slide");
+  let dots = document.getElementsByClassName("dots");
+  if (n > slide.length) {indexSlide = 1}
+  if (n < 1) {indexSlide = slide.length}
+  for (i = 0; i < slide.length; i++) {
+    slide[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slide[indexSlide-1].style.display = "block";
+  dots[indexSlide-1].className += " active";
 }
