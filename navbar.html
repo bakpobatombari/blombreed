@@ -89,7 +89,15 @@ We believe our students should be active participants in their own learning with
 <nav id="mobilenav" class="col-md-12 navbar position-fixed" style="width:100%;">
     
         <div class="logo-cont col-md-3"><a href="index.html"><img src="assets/images/logored.png" class="col-md-12 logoM" alt="logo" width="100%"/></a></div>
-    <i class='fas fa-search' style="font-size:30px;  position: absolute;right:20vw; top:4vh;  color:white;"></i>
+    <i class='fas fa-search' style="font-size:30px;  position: absolute;right:20vw; top:4vh;  color:white;"  onclick="openSav()"></i>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSav()">&times;</a>
+        <div class="overlay-content" style="padding-top: 100px;">
+            <form action="">
+                <input type="text" class="col-md-6" style="background-color: transparent; border: none;font-size: 40px; height:100px;color: white;" placeholder="SREACH HERE...">
+            </form>
+        </div>
+      </div>
     <div class="Mdivider offset-md-12" style="position: relative; top:-80px; left:20vw"></div>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
