@@ -94,3 +94,10 @@ function showSlide(n) {
   slide[indexSlide-1].style.display = "block";
   dots[indexSlide-1].className += " active";
 }
+function openSav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeSav() {
+  document.getElementById("myNav").style.width = "0%";
+}

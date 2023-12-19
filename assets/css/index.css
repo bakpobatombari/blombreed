@@ -2,8 +2,8 @@
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto;
-  overflow-x: hidden;
+   margin: auto;
+  /* overflow-x: hidden; */ 
 }
 
 /* Hide the images by default */
@@ -262,4 +262,30 @@ em{
   background-color: #242B69;
   height: 330px;
   display: block;
+}
+.feature{
+  height:50px;
+  background-color: white;
+  border: 2px darkred solid;
+  color: darkred;
+  font-weight: 500;
+  border-radius: 5px;
+  margin-bottom: 100px;
+  margin-top: -60px;
+  transition: ease-in-out 0.5s;
+}
+.feature:hover{
+  background-color: darkred;
+  color: white;
+  text-decoration: none;
+}
+.feature *:hover{
+  color: white;
+}
+.f-play{
+  
+  color: rgb(255, 255, 255);
+}
+.f-play:hover{
+  color: white;
 }

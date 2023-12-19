@@ -1,7 +1,16 @@
 <link rel="stylesheet" href="assets/css/sidenav.css">
 <link rel="stylesheet" href="assets/css/@media.css">
-<div class="buttons position-fixed webnav">
-    <button class="contact"><i class='fas fa-search'></i><br>SEARCH</button>
+<script src="assets/js/index.js"></script>
+<div class="buttons position-fixed webnav" style="font-family: serif;">
+    <button class="contact" onclick="openSav()"><i class='fas fa-search'></i><br>SEARCH</button>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSav()">&times;</a>
+        <div class="overlay-content" style="padding-top: 100px;">
+            <form action="">
+                <input type="text" class="col-md-6" style="background-color: transparent; border: none;font-size: 40px; height:100px;color: white;" placeholder="SREACH HERE...">
+            </form>
+        </div>
+      </div>
     <button class="contact"><i class='fas fa-question-circle'></i><br>INQUIRE</button>
     <button class="contact"><i class='far fa-newspaper'></i><br>APPLY</button>
     <button class="contact">
